@@ -1,0 +1,35 @@
+#include "DBO-TYPES.hsl"
+
+struct sMOB_TBLDAT{
+	TBLIDX			Tblidx;
+	DWORD			dwMobGroup;		
+	WORD			wMob_Kind;
+	DWORD			dwDrop_Zenny;
+	float			fDrop_Zenny_Rate;
+	WORD			wExp;
+	BYTE			byGrade;
+	BYTE			byMob_Type;
+	TBLIDX			drop_Item_Tblidx;
+
+	bool			bSize;
+	WORD			wTMQPoint;
+	
+	TBLIDX			dropQuestTblidx;
+	TBLIDX			dropTypeTblidx;
+	TBLIDX			dropEachTblidx;
+
+	BYTE			byDropTypeRateControl;
+	BYTE			byDropEachRateControl;
+
+	BYTE			byDropNItemRateControl;
+	BYTE			byDropSItemRateControl;
+	BYTE			byDropEItemRateControl;
+	BYTE			byDropLItemRateControl;
+
+	bool			bShow_Name;
+
+	BYTE			byProperty;
+	BYTE			byHtbBlockRate;
+
+	WORD			wSightAngle;
+} sMOB_TBLDAT;

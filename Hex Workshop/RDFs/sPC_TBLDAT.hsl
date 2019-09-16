@@ -1,0 +1,70 @@
+#include "DBO-TYPES.hsl"
+
+struct sCHAR_TBLDAT{
+        BYTE			byRace;
+	BYTE			byGender;
+	BYTE			byClass;
+        BYTE                    byPADDING1;
+	TBLIDX			prior_Class_Tblidx;
+	DWORD			dwClass_Bit_Flag;
+	char			szModel_Child[33];
+	char			szModel_Adult[33];
+
+        WORD                    PADDING5;
+
+	float			fChild_Run_Speed_Origin;
+	float			fChild_Run_Speed;
+	float			fAdult_Run_Speed_Origin;
+	float			fAdult_Run_Speed;
+
+	WORD			wBasic_RP;
+	WORD			wBasic_Physical_Offence;
+	WORD			wBasic_Energy_Offence;
+	BYTE			byLevel_Up_LP;
+	BYTE			byLevel_Up_EP;
+	BYTE			byLevel_Up_RP;
+	BYTE			byLevel_Up_Physical_Offence;
+	BYTE			byLevel_Up_Physical_Defence;
+	BYTE			byLevel_Up_Energy_Offence;
+	BYTE			byLevel_Up_Energy_Defence;
+
+        WORD                    PADDING6;
+        BYTE                    PADDING7;
+
+	float			fLevel_Up_Str;
+	float			fLevel_Up_Con;
+	float			fLevel_Up_Foc;
+	float			fLevel_Up_Dex;
+	float			fLevel_Up_Sol;
+	float			fLevel_Up_Eng;
+} sCHAR_TBLDAT;
+
+struct sPC_TBLDAT{
+	TBLIDX			Tblidx;
+	WORD			wBasic_LP;
+	WORD			wBasic_EP;
+	WORD			wBasic_Physical_Defence;
+	WORD			wBasic_Energy_Defence;
+	BYTE			byStr;
+	BYTE			byCon;
+	BYTE			byFoc;
+	BYTE			byDex;
+	BYTE			bySol;
+	BYTE			byEng;
+        WORD                    PADDING1;
+	float			fScale;
+	WORD			byAttack_Speed_Rate; // 盖颊 傍拜矫狼 局聪皋捞记 加档俊 措茄 %
+        WORD                    PADDING2;
+	WORD			wAttack_Type;
+	float			fAttack_Range;
+	WORD			wAttack_Rate;
+	WORD			wDodge_Rate;
+	WORD			wBlock_Rate;
+	BYTE			byCurse_Success_Rate;
+	BYTE			byCurse_Tolerance_Rate;
+        WORD                    PADDING3;
+	float			fRadius;
+	WORD			wBasic_Aggro_Point;
+        WORD                    PADDING4;
+        sCHAR_TBLDAT            CharTbl;
+} sPC_TBLDAT;

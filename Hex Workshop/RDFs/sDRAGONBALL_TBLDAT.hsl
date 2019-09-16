@@ -1,0 +1,26 @@
+#include "DBO-TYPES.hsl"
+
+struct sVECTOR2
+{
+	float x;
+	float z;
+} sVECTOR2;
+
+struct sDRAGONBALL_TBLDAT{
+	TBLIDX      Tblidx;
+	DWORD		dwAltarGroup;
+	BYTE		byBallType;
+        BYTE            PADDING[3];		
+	TBLIDX		aBallTblidx[7];
+	TBLIDX		ballDropTblidx;
+	TBLIDX		ballJunkTblidx;
+	TBLIDX		startDialog;
+	TBLIDX      endDialog;
+	TBLIDX      hurryDialog;
+	TBLIDX		timeoverDialog;
+	TBLIDX		noRepeatDialog;
+	TBLIDX		dragonNPCTblidx;
+	TBLIDX		defaultSummonChat;
+	TBLIDX      inventoryFullDialog;
+	sVECTOR2	fDir;
+} sDRAGONBALL_TBLDAT;

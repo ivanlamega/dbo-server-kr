@@ -1,0 +1,6 @@
+#include "DBO-TYPES.hsl"
+
+struct sMOVE_PATTERN_TBLDAT{
+	TBLIDX      Tblidx;
+	BYTE		abyPattern[64];	
+} sMOVE_PATTERN_TBLDAT;

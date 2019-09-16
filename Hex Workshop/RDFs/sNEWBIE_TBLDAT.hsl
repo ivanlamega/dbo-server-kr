@@ -1,0 +1,24 @@
+#include "DBO-TYPES.hsl"
+
+struct sNEWBIE_TBLDAT{
+        TBLIDX                  Tblidx;
+	BYTE			byRace;
+	BYTE			byClass;
+        WORD                    PADDING1;
+	WORLDID			world_Id;
+	TBLIDX			tutorialWorld;
+	sVECTOR3      vSpawn_Loc;
+	sVECTOR3      vSpawn_Dir;
+	sVECTOR3      vBind_Loc;
+	sVECTOR3      vBind_Dir;
+	TBLIDX			aitem_Tblidx[8];
+	BYTE			abyPos[8];
+	BYTE			abyStack_Quantity[8];
+	TBLIDX			mapNameTblidx;
+	TBLIDX			aSkillTblidx[3];
+	sNEWBIE_QUICKSLOT_DATA	asQuickData[5];
+	PORTALID		defaultPortalTblidx;
+	TBLIDX			qItemTblidx1;
+	BYTE			byQPosition1;
+	BYTE			byQStackQuantity1;
+} sNEWBIE_TBLDAT;

@@ -1,0 +1,70 @@
+#include "DBO-TYPES.hsl"
+
+struct sITEM_TBLDAT{
+        TBLIDX                  Tblidx;
+	bool			bValidity_Able;
+        BYTE                    PADDING[3];
+	TBLIDX			Name;
+	WCHAR			wszNameText[33];
+//	std::string		strIcon_Name;
+	char			szIcon_Name[33];
+	BYTE			byModel_Type;
+//	std::string		strModel;
+	char			szModel[33];
+//	std::string		strSub_Weapon_Act_Model;
+	char			szSub_Weapon_Act_Model[33];
+	BYTE			byItem_Type;
+	BYTE			byEquip_Type;
+	WORD			wEquip_Slot_Type_Bit_Flag;		// 浇吩 茄俺父 历厘
+	WORD			wFunction_Bit_Flag;
+	BYTE			byMax_Stack;
+	BYTE			byRank;
+	DWORD			dwCost;
+	BYTE			bySell_Price;
+	BYTE			byDurability;
+	BYTE			byDurability_Count;
+	BYTE			byBattle_Attribute;
+	// 傍拜仿, 规绢仿 包访
+	WORD			wPhysical_Offence;
+	WORD			wEnergy_Offence;
+	WORD			wPhysical_Defence;
+	WORD			wEnergy_Defence;
+	// 诀弊饭捞靛 包访
+	DWORD			dwPhysical_OffenceUpgrade;
+	DWORD			dwEnergy_OffenceUpgrade;
+	DWORD			dwPhysical_DefenceUpgrade;
+	DWORD			dwEnergy_DefenceUpgrade;
+
+	float			fAttack_Range_Bonus;
+	WORD			wAttack_Speed_Rate;  // 局聪皋捞 加档俊 措茄 %
+	BYTE			byNeed_Level;
+	DWORD			dwNeed_Class_Bit_Flag;
+	BYTE			byClass_Special;
+	BYTE			byRace_Special;
+	BYTE			byNeed_Str;
+	BYTE			byNeed_Con;
+	BYTE			byNeed_Foc;
+	BYTE			byNeed_Dex;
+	BYTE			byNeed_Sol;
+	BYTE			byNeed_Eng;
+	TBLIDX			set_Item_Tblidx;
+	TBLIDX			Note;
+	BYTE			byBag_Size;
+	WORD			wScouter_Watt;	
+	DWORD			dwScouter_MaxPower;
+	BYTE			byScouter_Parts_Type;
+	BYTE			byScouter_Parts_Value;
+	TBLIDX			Use_Item_Tblidx;
+	TBLIDX			Item_Option_Tblidx;
+	BYTE			byItemGroup;
+	TBLIDX			Charm_Tblidx;
+	WORD			wCostumeHideBitFlag;
+	TBLIDX			NeedItemTblidx;		// 玫窍力老公档雀 惑痢俊辑 备概俊 鞘夸茄 酒捞袍
+	DWORD			CommonPoint;		// 公档荤器牢飘, NetPY
+	BYTE			byCommonPointType;
+	BYTE			byNeedFunction;
+	DWORD			dwUseDurationMax;	//酒捞袍 弥措 荤侩扁埃 ( 檬 窜困 )
+	BYTE			byDurationType;		//eDURATIONTYPE
+	TBLIDX			contentsTblidx;
+	DWORD			dwDurationGroup;
+} sITEM_TBLDAT;
