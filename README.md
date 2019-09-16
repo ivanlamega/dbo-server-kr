@@ -25,7 +25,7 @@ When it looks like [this](http://puu.sh/a0q9o/946f96747f.png) it is correct.
 Next in the NtlDatabase folder open mysql_wrapper.h and change the database credentials to your database credentials
 (currently the stored procedures require the user to be root@% you can change them if you like)
  
-Now open AKCore.sln with visual studio 2010.
+Now open AKCore.sln with visual studio 2013.
 Select the Debug/win32 configurations and compile.
 
 Congrats you are done with this section
@@ -43,12 +43,9 @@ Create your first account by manually entering it in your database.
 Now that you have everything compiled you can setup your server.
 
 Go into the debug folder in the root directory (AKCore) 
-there are 4 files you can edit.
+there is 1 file you can edit.
 
-1. AuthServer.ini
-2. CharServer.ini
-3. ChatServer.ini
-4. GameServer.ini
+1. Server.ini
 
 All you have to do in here is set your ports. If you don't want to that is fine as well.
 This is an optional step.
